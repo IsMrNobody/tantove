@@ -243,7 +243,7 @@
 
           <v-col cols="12" md="6">
             <div class="position-relative">
-              <NuxtImg
+              <img
                 src="https://images.unsplash.com/photo-1587603366933-aa6947174c65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmVuZXp1ZWxhJTIwYXJlcGF8ZW58MHx8MHx8fDA%3D"
                 alt="Gastronomía venezolana"
                 class="rounded-lg w-100"
@@ -398,7 +398,8 @@ const features = [
     description:
       "Desde el Salto Ángel hasta Los Roques, descubre paisajes que te quitarán el aliento.",
     icon: "mdi-mountain",
-    image: "https://images.unsplash.com/photo-1581260502159-c9204828728c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHZlbmV6dWVsYXxlbnwwfHwwfHx8MA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1581260502159-c9204828728c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHZlbmV6dWVsYXxlbnwwfHwwfHx8MA%3D%3D",
     link: "/destinos",
   },
   {
@@ -406,7 +407,8 @@ const features = [
     description:
       "Saborea los platos tradicionales que han conquistado paladares por generaciones.",
     icon: "mdi-food",
-    image: "https://images.unsplash.com/photo-1619683909167-9a9336b7d86c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmVuZXp1ZWxhJTIwYXJlcGF8ZW58MHx8MHx8fDA%3D",
+    image:
+      "https://images.unsplash.com/photo-1619683909167-9a9336b7d86c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmVuZXp1ZWxhJTIwYXJlcGF8ZW58MHx8MHx8fDA%3D",
     link: "/gastronomia",
   },
   {
@@ -414,7 +416,8 @@ const features = [
     description:
       "Sumérgete en las tradiciones, música y arte que definen la identidad venezolana.",
     icon: "mdi-music",
-    image: "https://images.unsplash.com/photo-1584240117008-9b9d7525e96f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHZlbmV6dWVsYXxlbnwwfHwwfHx8MA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1584240117008-9b9d7525e96f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHZlbmV6dWVsYXxlbnwwfHwwfHx8MA%3D%3D",
     link: "/cultura",
   },
 ];
@@ -426,7 +429,8 @@ const popularDestinations = [
     region: "Caribe",
     rating: 5,
     reviews: "2,847",
-    image: "https://images.unsplash.com/photo-1538964173425-93884d739596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVuZXp1ZWxhJTIwcGxheWF8ZW58MHx8MHx8fDA%3D",
+    image:
+      "https://images.unsplash.com/photo-1538964173425-93884d739596?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVuZXp1ZWxhJTIwcGxheWF8ZW58MHx8MHx8fDA%3D",
   },
   {
     name: "Salto Ángel",
@@ -434,7 +438,8 @@ const popularDestinations = [
     region: "Canaima",
     rating: 5,
     reviews: "1,923",
-    image: "https://www.venez.pl/wp-content/uploads/2013/12/MA_20141130_005966_D.jpg",
+    image:
+      "https://www.venez.pl/wp-content/uploads/2013/12/MA_20141130_005966_D.jpg",
   },
   {
     name: "Mérida",
@@ -442,7 +447,8 @@ const popularDestinations = [
     region: "Andes",
     rating: 4.8,
     reviews: "3,156",
-    image: "https://andaventura.com/wp-content/uploads/2023/08/merida-2.jpg",
+    image:
+      "https://media.viajando.travel/p/d28447dd37a1e7a311955f1d659abd13/adjuntos/236/imagenes/000/501/0000501166/1200x675/smart/merida-parque-plazagrande-centrohistorico-angulopicado-atardecer-79jpg.jpg",
   },
   {
     name: "Isla Margarita",
@@ -450,7 +456,8 @@ const popularDestinations = [
     region: "Nueva Esparta",
     rating: 4.7,
     reviews: "4,292",
-    image: "https://venezuelainfo.de/wp-content/uploads/2023/12/6154f738-af2b-4d49-a665-6a56780199ab-3-1100x800.jpg",
+    image:
+      "https://venezuelainfo.de/wp-content/uploads/2023/12/6154f738-af2b-4d49-a665-6a56780199ab-3-1100x800.jpg",
   },
 ];
 
