@@ -5,14 +5,17 @@
       <v-container class="container-custom">
         <v-row align="center" class="min-height-40vh">
           <v-col cols="12" md="8">
-            <h1 class="text-h2 font-weight-bold mb-4">
-              Eventos en Venezuela
-            </h1>
+            <h1 class="text-h2 font-weight-bold mb-4">Eventos en Venezuela</h1>
             <p class="text-h6 mb-6">
               Descubre las festividades, conciertos, exposiciones y eventos
-              culturales que celebran la diversidad venezolana durante todo el año.
+              culturales que celebran la diversidad venezolana durante todo el
+              año.
             </p>
-            <v-btn size="large" color="accent" class="text-primary font-weight-bold">
+            <v-btn
+              size="large"
+              color="accent"
+              class="text-primary font-weight-bold"
+            >
               <v-icon start>mdi-calendar-plus</v-icon>
               Ver Calendario
             </v-btn>
@@ -122,14 +125,18 @@
                 <p class="text-body-2 text-grey-darken-1 mb-3">
                   {{ event.description }}
                 </p>
-                
+
                 <div class="d-flex align-center mb-2">
-                  <v-icon color="secondary" size="small" class="mr-2">mdi-map-marker</v-icon>
+                  <v-icon color="secondary" size="small" class="mr-2"
+                    >mdi-map-marker</v-icon
+                  >
                   <span class="text-body-2">{{ event.location }}</span>
                 </div>
-                
+
                 <div class="d-flex align-center mb-3">
-                  <v-icon color="accent" size="small" class="mr-2">mdi-clock</v-icon>
+                  <v-icon color="accent" size="small" class="mr-2"
+                    >mdi-clock</v-icon
+                  >
                   <span class="text-body-2">{{ event.time }}</span>
                 </div>
 
@@ -213,7 +220,7 @@
               <v-card-title class="text-center bg-primary text-white">
                 <h4 class="text-h6">{{ month.name }}</h4>
               </v-card-title>
-              
+
               <v-card-text class="pa-3">
                 <v-list density="compact">
                   <v-list-item
@@ -248,11 +255,7 @@
     <!-- Modal de Detalle del Evento -->
     <v-dialog v-model="eventModal" max-width="800" scrollable>
       <v-card v-if="selectedEvent">
-        <v-img
-          :src="selectedEvent.image"
-          height="300"
-          cover
-        >
+        <v-img :src="selectedEvent.image" height="300" cover>
           <v-btn
             icon="mdi-close"
             variant="text"
@@ -271,15 +274,19 @@
           <h2 class="text-h4 font-weight-bold text-primary mb-4">
             {{ selectedEvent.name }}
           </h2>
-          
+
           <div class="event-info mb-6">
             <v-row>
               <v-col cols="12" md="6">
                 <div class="d-flex align-center mb-3">
                   <v-icon color="primary" class="mr-3">mdi-calendar</v-icon>
                   <div>
-                    <div class="font-weight-medium">{{ selectedEvent.fullDate }}</div>
-                    <div class="text-body-2 text-grey-darken-1">{{ selectedEvent.time }}</div>
+                    <div class="font-weight-medium">
+                      {{ selectedEvent.fullDate }}
+                    </div>
+                    <div class="text-body-2 text-grey-darken-1">
+                      {{ selectedEvent.time }}
+                    </div>
                   </div>
                 </div>
               </v-col>
@@ -287,8 +294,12 @@
                 <div class="d-flex align-center mb-3">
                   <v-icon color="secondary" class="mr-3">mdi-map-marker</v-icon>
                   <div>
-                    <div class="font-weight-medium">{{ selectedEvent.location }}</div>
-                    <div class="text-body-2 text-grey-darken-1">{{ selectedEvent.address }}</div>
+                    <div class="font-weight-medium">
+                      {{ selectedEvent.location }}
+                    </div>
+                    <div class="text-body-2 text-grey-darken-1">
+                      {{ selectedEvent.address }}
+                    </div>
                   </div>
                 </div>
               </v-col>
@@ -315,13 +326,17 @@
               <template v-slot:prepend>
                 <v-icon color="primary">mdi-currency-usd</v-icon>
               </template>
-              <v-list-item-title>Entrada: {{ selectedEvent.price }}</v-list-item-title>
+              <v-list-item-title
+                >Entrada: {{ selectedEvent.price }}</v-list-item-title
+              >
             </v-list-item>
             <v-list-item>
               <template v-slot:prepend>
                 <v-icon color="primary">mdi-phone</v-icon>
               </template>
-              <v-list-item-title>Contacto: {{ selectedEvent.contact }}</v-list-item-title>
+              <v-list-item-title
+                >Contacto: {{ selectedEvent.contact }}</v-list-item-title
+              >
             </v-list-item>
             <v-list-item v-if="selectedEvent.website">
               <template v-slot:prepend>
@@ -342,9 +357,7 @@
             Compartir
           </v-btn>
           <v-spacer></v-spacer>
-          <v-btn variant="outlined" @click="eventModal = false">
-            Cerrar
-          </v-btn>
+          <v-btn variant="outlined" @click="eventModal = false"> Cerrar </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -352,240 +365,396 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue";
 
 // SEO Meta tags
 useHead({
-  title: 'Eventos en Venezuela - Te Amo Tanto Venezuela',
+  title: "Eventos en Venezuela - Te Amo Tanto Venezuela",
   meta: [
-    { name: 'description', content: 'Descubre los eventos, festividades y celebraciones culturales de Venezuela durante todo el año.' }
-  ]
-})
+    {
+      name: "description",
+      content:
+        "Descubre los eventos, festividades y celebraciones culturales de Venezuela durante todo el año.",
+    },
+  ],
+});
 
-const selectedMonth = ref(null)
-const selectedCategory = ref(null)
-const selectedRegion = ref(null)
-const searchQuery = ref('')
-const eventModal = ref(false)
-const selectedEvent = ref(null)
+const selectedMonth = ref(null);
+const selectedCategory = ref(null);
+const selectedRegion = ref(null);
+const searchQuery = ref("");
+const eventModal = ref(false);
+const selectedEvent = ref(null);
 
 const months = [
-  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
-]
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
 
 const categories = [
-  'Cultural', 'Musical', 'Gastronómico', 'Deportivo', 'Religioso', 'Artístico'
-]
+  "Cultural",
+  "Musical",
+  "Gastronómico",
+  "Deportivo",
+  "Religioso",
+  "Artístico",
+];
 
 const regions = [
-  'Caribe', 'Andes', 'Centro', 'Oriente', 'Guayana', 'Llanos', 'Zulia'
-]
+  "Caribe",
+  "Andes",
+  "Centro",
+  "Oriente",
+  "Guayana",
+  "Llanos",
+  "Zulia",
+];
 
 const events = [
   {
     id: 1,
-    name: 'Carnaval de El Callao',
-    description: 'El carnaval más colorido de Venezuela, Patrimonio de la Humanidad.',
-    category: 'Cultural',
-    categoryColor: 'purple',
-    month: 'FEB',
-    day: '12',
-    fullDate: '12-15 de Febrero, 2024',
-    time: '10:00 AM - 10:00 PM',
-    location: 'El Callao, Bolívar',
-    address: 'Centro histórico de El Callao',
-    image: 'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg',
-    activities: ['Comparsas', 'Calipso', 'Disfraces', 'Concursos'],
-    fullDescription: 'El Carnaval de El Callao es una celebración única que combina la cultura afrocaribeña con las tradiciones venezolanas. Durante cuatro días, las calles se llenan de música, color y alegría.',
-    price: 'Gratuito',
-    contact: '+58 285-962-0123',
-    website: 'www.carnavaldecallao.ve'
+    name: "Carnaval de El Callao",
+    description:
+      "El carnaval más colorido de Venezuela, Patrimonio de la Humanidad.",
+    category: "Cultural",
+    categoryColor: "purple",
+    month: "FEB",
+    day: "12",
+    fullDate: "12-15 de Febrero, 2024",
+    time: "10:00 AM - 10:00 PM",
+    location: "El Callao, Bolívar",
+    address: "Centro histórico de El Callao",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    activities: ["Comparsas", "Calipso", "Disfraces", "Concursos"],
+    fullDescription:
+      "El Carnaval de El Callao es una celebración única que combina la cultura afrocaribeña con las tradiciones venezolanas. Durante cuatro días, las calles se llenan de música, color y alegría.",
+    price: "Gratuito",
+    contact: "+58 285-962-0123",
+    website: "www.carnavaldecallao.ve",
   },
   {
     id: 2,
-    name: 'Festival de Jazz de Caracas',
-    description: 'El encuentro de jazz más importante de Venezuela.',
-    category: 'Musical',
-    categoryColor: 'blue',
-    month: 'MAR',
-    day: '15',
-    fullDate: '15-20 de Marzo, 2024',
-    time: '7:00 PM - 11:00 PM',
-    location: 'Teatro Teresa Carreño, Caracas',
-    address: 'Av. Paseo Colón, Los Caobos',
-    image: 'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg',
-    activities: ['Conciertos', 'Masterclass', 'Jam sessions', 'Exposiciones'],
-    fullDescription: 'El Festival de Jazz de Caracas reúne a los mejores músicos nacionales e internacionales en una celebración del jazz en todas sus formas.',
-    price: 'Bs. 50.000 - 150.000',
-    contact: '+58 212-571-3800'
+    name: "Festival de Jazz de Caracas",
+    description: "El encuentro de jazz más importante de Venezuela.",
+    category: "Musical",
+    categoryColor: "blue",
+    month: "MAR",
+    day: "15",
+    fullDate: "15-20 de Marzo, 2024",
+    time: "7:00 PM - 11:00 PM",
+    location: "Teatro Teresa Carreño, Caracas",
+    address: "Av. Paseo Colón, Los Caobos",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    activities: ["Conciertos", "Masterclass", "Jam sessions", "Exposiciones"],
+    fullDescription:
+      "El Festival de Jazz de Caracas reúne a los mejores músicos nacionales e internacionales en una celebración del jazz en todas sus formas.",
+    price: "Bs. 50.000 - 150.000",
+    contact: "+58 212-571-3800",
   },
   {
     id: 3,
-    name: 'Feria Internacional del Libro',
-    description: 'La cita literaria más importante del país.',
-    category: 'Cultural',
-    categoryColor: 'green',
-    month: 'ABR',
-    day: '22',
-    fullDate: '22-30 de Abril, 2024',
-    time: '9:00 AM - 8:00 PM',
-    location: 'Centro de Arte La Estancia, Caracas',
-    address: 'Av. Francisco de Miranda, Altamira',
-    image: 'https://images.pexels.com/photos/1679825/pexels-photo-1679825.jpeg',
-    activities: ['Presentaciones', 'Talleres', 'Conferencias', 'Firma de libros'],
-    fullDescription: 'La Feria Internacional del Libro de Venezuela es el evento editorial más importante del país, donde se reúnen escritores, editores y lectores.',
-    price: 'Gratuito',
-    contact: '+58 212-283-5818'
+    name: "Feria Internacional del Libro",
+    description: "La cita literaria más importante del país.",
+    category: "Cultural",
+    categoryColor: "green",
+    month: "ABR",
+    day: "22",
+    fullDate: "22-30 de Abril, 2024",
+    time: "9:00 AM - 8:00 PM",
+    location: "Centro de Arte La Estancia, Caracas",
+    address: "Av. Francisco de Miranda, Altamira",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    activities: [
+      "Presentaciones",
+      "Talleres",
+      "Conferencias",
+      "Firma de libros",
+    ],
+    fullDescription:
+      "La Feria Internacional del Libro de Venezuela es el evento editorial más importante del país, donde se reúnen escritores, editores y lectores.",
+    price: "Gratuito",
+    contact: "+58 212-283-5818",
   },
   {
     id: 4,
-    name: 'Festival Gastronómico de Margarita',
-    description: 'Celebración de la gastronomía caribeña y venezolana.',
-    category: 'Gastronómico',
-    categoryColor: 'orange',
-    month: 'MAY',
-    day: '10',
-    fullDate: '10-15 de Mayo, 2024',
-    time: '6:00 PM - 12:00 AM',
-    location: 'Playa El Agua, Isla Margarita',
-    address: 'Sector El Agua, Antolín del Campo',
-    image: 'https://placehold.co/400x200/FF9800/FFFFFF?text=Festival+Gastronomico',
-    activities: ['Degustaciones', 'Showcooking', 'Concursos', 'Música en vivo'],
-    fullDescription: 'Un festival que celebra la rica tradición culinaria de Venezuela con énfasis en los sabores del Caribe.',
-    price: 'Bs. 80.000 - 200.000',
-    contact: '+58 295-242-1850'
-  }
-]
+    name: "Festival Gastronómico de Margarita",
+    description: "Celebración de la gastronomía caribeña y venezolana.",
+    category: "Gastronómico",
+    categoryColor: "orange",
+    month: "MAY",
+    day: "10",
+    fullDate: "10-15 de Mayo, 2024",
+    time: "6:00 PM - 12:00 AM",
+    location: "Playa El Agua, Isla Margarita",
+    address: "Sector El Agua, Antolín del Campo",
+    image:
+      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    activities: ["Degustaciones", "Showcooking", "Concursos", "Música en vivo"],
+    fullDescription:
+      "Un festival que celebra la rica tradición culinaria de Venezuela con énfasis en los sabores del Caribe.",
+    price: "Bs. 80.000 - 200.000",
+    contact: "+58 295-242-1850",
+  },
+];
 
 const eventCalendar = [
   {
-    name: 'Enero',
+    name: "Enero",
     events: [
-      { name: 'Feria de San Sebastián', location: 'Táchira', day: '20', color: 'primary' },
-      { name: 'Parranda de San Pedro', location: 'Miranda', day: '28', color: 'secondary' }
-    ]
+      {
+        name: "Feria de San Sebastián",
+        location: "Táchira",
+        day: "20",
+        color: "primary",
+      },
+      {
+        name: "Parranda de San Pedro",
+        location: "Miranda",
+        day: "28",
+        color: "secondary",
+      },
+    ],
   },
   {
-    name: 'Febrero',
+    name: "Febrero",
     events: [
-      { name: 'Carnaval de El Callao', location: 'Bolívar', day: '12', color: 'purple' },
-      { name: 'Festival de Orquídeas', location: 'Mérida', day: '25', color: 'pink' }
-    ]
+      {
+        name: "Carnaval de El Callao",
+        location: "Bolívar",
+        day: "12",
+        color: "purple",
+      },
+      {
+        name: "Festival de Orquídeas",
+        location: "Mérida",
+        day: "25",
+        color: "pink",
+      },
+    ],
   },
   {
-    name: 'Marzo',
+    name: "Marzo",
     events: [
-      { name: 'Festival de Jazz', location: 'Caracas', day: '15', color: 'blue' },
-      { name: 'Semana Santa', location: 'Nacional', day: '28', color: 'brown' }
-    ]
+      {
+        name: "Festival de Jazz",
+        location: "Caracas",
+        day: "15",
+        color: "blue",
+      },
+      { name: "Semana Santa", location: "Nacional", day: "28", color: "brown" },
+    ],
   },
   {
-    name: 'Abril',
+    name: "Abril",
     events: [
-      { name: 'Feria del Libro', location: 'Caracas', day: '22', color: 'green' },
-      { name: 'Festival de Artes', location: 'Valencia', day: '30', color: 'teal' }
-    ]
+      {
+        name: "Feria del Libro",
+        location: "Caracas",
+        day: "22",
+        color: "green",
+      },
+      {
+        name: "Festival de Artes",
+        location: "Valencia",
+        day: "30",
+        color: "teal",
+      },
+    ],
   },
   {
-    name: 'Mayo',
+    name: "Mayo",
     events: [
-      { name: 'Festival Gastronómico', location: 'Margarita', day: '10', color: 'orange' },
-      { name: 'Cruz de Mayo', location: 'Nacional', day: '31', color: 'red' }
-    ]
+      {
+        name: "Festival Gastronómico",
+        location: "Margarita",
+        day: "10",
+        color: "orange",
+      },
+      { name: "Cruz de Mayo", location: "Nacional", day: "31", color: "red" },
+    ],
   },
   {
-    name: 'Junio',
+    name: "Junio",
     events: [
-      { name: 'Corpus Christi', location: 'Miranda', day: '15', color: 'amber' },
-      { name: 'San Juan Bautista', location: 'Nacional', day: '24', color: 'indigo' }
-    ]
+      {
+        name: "Corpus Christi",
+        location: "Miranda",
+        day: "15",
+        color: "amber",
+      },
+      {
+        name: "San Juan Bautista",
+        location: "Nacional",
+        day: "24",
+        color: "indigo",
+      },
+    ],
   },
   {
-    name: 'Julio',
+    name: "Julio",
     events: [
-      { name: 'Festival de Música', location: 'Maracaibo', day: '16', color: 'cyan' },
-      { name: 'Fiesta del Tambor', location: 'Vargas', day: '25', color: 'deep-orange' }
-    ]
+      {
+        name: "Festival de Música",
+        location: "Maracaibo",
+        day: "16",
+        color: "cyan",
+      },
+      {
+        name: "Fiesta del Tambor",
+        location: "Vargas",
+        day: "25",
+        color: "deep-orange",
+      },
+    ],
   },
   {
-    name: 'Agosto',
+    name: "Agosto",
     events: [
-      { name: 'Festival de Teatro', location: 'Caracas', day: '12', color: 'lime' },
-      { name: 'Feria de Artesanías', location: 'Lara', day: '28', color: 'light-blue' }
-    ]
+      {
+        name: "Festival de Teatro",
+        location: "Caracas",
+        day: "12",
+        color: "lime",
+      },
+      {
+        name: "Feria de Artesanías",
+        location: "Lara",
+        day: "28",
+        color: "light-blue",
+      },
+    ],
   },
   {
-    name: 'Septiembre',
+    name: "Septiembre",
     events: [
-      { name: 'Festival del Joropo', location: 'Apure', day: '15', color: 'yellow' },
-      { name: 'Día del Patrimonio', location: 'Nacional', day: '26', color: 'purple' }
-    ]
+      {
+        name: "Festival del Joropo",
+        location: "Apure",
+        day: "15",
+        color: "yellow",
+      },
+      {
+        name: "Día del Patrimonio",
+        location: "Nacional",
+        day: "26",
+        color: "purple",
+      },
+    ],
   },
   {
-    name: 'Octubre',
+    name: "Octubre",
     events: [
-      { name: 'Festival de Cine', location: 'Mérida', day: '18', color: 'pink' },
-      { name: 'Día de la Resistencia', location: 'Nacional', day: '12', color: 'blue-grey' }
-    ]
+      {
+        name: "Festival de Cine",
+        location: "Mérida",
+        day: "18",
+        color: "pink",
+      },
+      {
+        name: "Día de la Resistencia",
+        location: "Nacional",
+        day: "12",
+        color: "blue-grey",
+      },
+    ],
   },
   {
-    name: 'Noviembre',
+    name: "Noviembre",
     events: [
-      { name: 'Feria de la Chinita', location: 'Zulia', day: '18', color: 'deep-purple' },
-      { name: 'Festival de Danza', location: 'Caracas', day: '30', color: 'green' }
-    ]
+      {
+        name: "Feria de la Chinita",
+        location: "Zulia",
+        day: "18",
+        color: "deep-purple",
+      },
+      {
+        name: "Festival de Danza",
+        location: "Caracas",
+        day: "30",
+        color: "green",
+      },
+    ],
   },
   {
-    name: 'Diciembre',
+    name: "Diciembre",
     events: [
-      { name: 'Navidad Venezolana', location: 'Nacional', day: '16', color: 'red' },
-      { name: 'Año Nuevo', location: 'Nacional', day: '31', color: 'blue' }
-    ]
-  }
-]
+      {
+        name: "Navidad Venezolana",
+        location: "Nacional",
+        day: "16",
+        color: "red",
+      },
+      { name: "Año Nuevo", location: "Nacional", day: "31", color: "blue" },
+    ],
+  },
+];
 
 const filteredEvents = computed(() => {
-  let filtered = events
+  let filtered = events;
 
   if (selectedMonth.value) {
     const monthMap = {
-      'Enero': 'ENE', 'Febrero': 'FEB', 'Marzo': 'MAR', 'Abril': 'ABR',
-      'Mayo': 'MAY', 'Junio': 'JUN', 'Julio': 'JUL', 'Agosto': 'AGO',
-      'Septiembre': 'SEP', 'Octubre': 'OCT', 'Noviembre': 'NOV', 'Diciembre': 'DIC'
-    }
-    const monthCode = monthMap[selectedMonth.value]
-    filtered = filtered.filter(e => e.month === monthCode)
+      Enero: "ENE",
+      Febrero: "FEB",
+      Marzo: "MAR",
+      Abril: "ABR",
+      Mayo: "MAY",
+      Junio: "JUN",
+      Julio: "JUL",
+      Agosto: "AGO",
+      Septiembre: "SEP",
+      Octubre: "OCT",
+      Noviembre: "NOV",
+      Diciembre: "DIC",
+    };
+    const monthCode = monthMap[selectedMonth.value];
+    filtered = filtered.filter((e) => e.month === monthCode);
   }
 
   if (selectedCategory.value) {
-    filtered = filtered.filter(e => e.category === selectedCategory.value)
+    filtered = filtered.filter((e) => e.category === selectedCategory.value);
   }
 
   if (selectedRegion.value) {
-    filtered = filtered.filter(e => e.location.includes(selectedRegion.value))
+    filtered = filtered.filter((e) =>
+      e.location.includes(selectedRegion.value)
+    );
   }
 
   if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    filtered = filtered.filter(e => 
-      e.name.toLowerCase().includes(query) ||
-      e.description.toLowerCase().includes(query)
-    )
+    const query = searchQuery.value.toLowerCase();
+    filtered = filtered.filter(
+      (e) =>
+        e.name.toLowerCase().includes(query) ||
+        e.description.toLowerCase().includes(query)
+    );
   }
 
-  return filtered
-})
+  return filtered;
+});
 
 const openEventModal = (event) => {
-  selectedEvent.value = event
-  eventModal.value = true
-}
+  selectedEvent.value = event;
+  eventModal.value = true;
+};
 
 const addToCalendar = (event) => {
   // Simulación de agregar al calendario
-  alert(`Evento "${event.name}" agregado al calendario`)
-}
+  alert(`Evento "${event.name}" agregado al calendario`);
+};
 </script>
 
 <style scoped>

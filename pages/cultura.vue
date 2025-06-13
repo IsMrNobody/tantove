@@ -390,7 +390,7 @@ const musicalGenres = [
     name: "Joropo",
     description: "Música y baile tradicional de los llanos venezolanos.",
     region: "Llanos",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     instruments: ["Arpa", "Cuatro", "Maracas"],
     fullDescription:
       "El joropo es el género musical más representativo de Venezuela, especialmente de la región llanera. Se caracteriza por su ritmo alegre y sus letras que exaltan la vida del llano.",
@@ -406,7 +406,7 @@ const musicalGenres = [
     name: "Gaita Zuliana",
     description: "Género musical navideño del estado Zulia.",
     region: "Zulia",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     instruments: ["Furro", "Tambora", "Charrasca", "Cuatro"],
     fullDescription:
       "La gaita zuliana es un género musical venezolano originario del estado Zulia, tradicionalmente interpretado en época navideña.",
@@ -422,7 +422,7 @@ const musicalGenres = [
     name: "Calipso",
     description: "Música caribeña con influencias de Trinidad y Tobago.",
     region: "Oriente",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     instruments: ["Steel drums", "Guitarra", "Bajo", "Percusión"],
     fullDescription:
       "El calipso venezolano tiene sus raíces en las islas caribeñas, especialmente influenciado por la música de Trinidad y Tobago.",
@@ -443,7 +443,7 @@ const crafts = [
     region: "Lara",
     material: "Arcilla",
     materialColor: "brown",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 2,
@@ -452,7 +452,7 @@ const crafts = [
     region: "Falcón",
     material: "Palma",
     materialColor: "green",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 3,
@@ -461,7 +461,7 @@ const crafts = [
     region: "Monagas",
     material: "Algodón",
     materialColor: "blue",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 4,
@@ -470,7 +470,7 @@ const crafts = [
     region: "Bolívar",
     material: "Papel maché",
     materialColor: "purple",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 5,
@@ -479,7 +479,7 @@ const crafts = [
     region: "Mérida",
     material: "Madera",
     materialColor: "brown",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 6,
@@ -488,7 +488,7 @@ const crafts = [
     region: "Zulia",
     material: "Algodón",
     materialColor: "primary",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
 ];
 
@@ -500,7 +500,7 @@ const festivals = [
     location: "El Callao, Bolívar",
     description:
       "Carnaval declarado Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     color: "cultura-primary",
     icon: "mdi-mask",
     activities: ["Comparsas", "Calipso", "Disfraces", "Bailes"],
@@ -512,7 +512,7 @@ const festivals = [
     location: "San Francisco de Yare, Miranda",
     description:
       "Tradición religiosa que combina elementos católicos y africanos.",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     color: "cultura-secondary",
     icon: "mdi-drama-masks",
     activities: ["Danzas", "Máscaras", "Rituales", "Procesión"],
@@ -524,7 +524,7 @@ const festivals = [
     location: "San Cristóbal, Táchira",
     description:
       "Una de las ferias más importantes de Venezuela con actividades culturales y comerciales.",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     color: "cultura-accent",
     icon: "mdi-festival",
     activities: ["Conciertos", "Exposiciones", "Corridas", "Gastronomía"],
@@ -535,7 +535,7 @@ const festivals = [
     date: "Junio",
     location: "Lara",
     description: "Manifestación cultural que honra a San Antonio de Padua.",
-    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
     color: "cultura-secondary",
     icon: "mdi-music",
     activities: ["Danzas", "Música", "Cantos", "Rituales"],
@@ -549,7 +549,7 @@ const famousPeople = [
     profession: "Libertador",
     achievement: "Líder de la independencia de América Latina",
     period: "1783-1830",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 2,
@@ -557,7 +557,7 @@ const famousPeople = [
     profession: "Pianista",
     achievement: "Virtuosa del piano reconocida mundialmente",
     period: "1853-1917",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 3,
@@ -565,7 +565,7 @@ const famousPeople = [
     profession: "Escritor",
     achievement: 'Autor de "Doña Bárbara", presidente de Venezuela',
     period: "1884-1969",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
   {
     id: 4,
@@ -573,7 +573,7 @@ const famousPeople = [
     profession: "Pintor",
     achievement: "Maestro del arte moderno venezolano",
     period: "1889-1954",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
   },
 ];
 
