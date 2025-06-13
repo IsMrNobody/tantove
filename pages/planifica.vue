@@ -133,13 +133,7 @@
           >
             <v-card class="itinerary-card h-100 hover-lift" elevation="4">
               <div class="position-relative">
-                <NuxtImg
-                  :src="itinerary.image"
-                  :alt="itinerary.name"
-                  class="itinerary-image"
-                  width="400"
-                  height="200"
-                />
+                <img :src="itinerary.image" :alt="itinerary.name" class="itinerary-image" width="400" height="200" />
                 <v-chip
                   class="position-absolute top-0 right-0 ma-2"
                   :color="itinerary.typeColor"

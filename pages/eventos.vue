@@ -91,13 +91,7 @@
           >
             <v-card class="event-card h-100 hover-lift" elevation="4">
               <div class="position-relative">
-                <NuxtImg
-                  :src="event.image"
-                  :alt="event.name"
-                  class="event-image"
-                  width="400"
-                  height="200"
-                />
+                <img :src="event.image" :alt="event.name" class="event-image" width="400" height="200" />
                 <v-chip
                   class="position-absolute top-0 right-0 ma-2"
                   :color="event.categoryColor"

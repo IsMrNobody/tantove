@@ -244,7 +244,7 @@
           <v-col cols="12" md="6">
             <div class="position-relative">
               <NuxtImg
-                src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
+                src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"
                 alt="Gastronomía venezolana"
                 class="rounded-lg w-100"
                 width="600"
