@@ -10,7 +10,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             primary: "#EDC939", //  Amarillo del mar caribeño
             secondary: "#2F6A4C", // Verde de la vegetación
-            tertiary: "#DA3822", // Azul de la bandera
+            bluered: "#005A8B", // Azul de la bandera
             accent: "#DA3822", // Rojo de la bandera
             error: "#FF5252",
             info: "#2196F3",

@@ -3,7 +3,7 @@
     <!-- Barra de navegación -->
     <v-app-bar
       :elevation="scrolled ? 4 : 0"
-      :color="scrolled ? 'background' : 'accent'"
+      :color="scrolled ? 'bluered' : 'accent'"
       :theme="scrolled ? 'light' : 'dark'"
       app
       fixed
