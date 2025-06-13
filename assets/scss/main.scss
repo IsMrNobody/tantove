@@ -1,0 +1,144 @@
+// Variables globales de Vuetify
+@use 'vuetify/settings' with (
+  $utilities: false,
+);
+
+// Estilos globales
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+// Container personalizado
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// Clases utilitarias
+.text-gradient {
+  background: linear-gradient(90deg, #EDC939 0%, #2F6A4C 50%, #DA3822 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    rgba(0, 119, 190, 0.7),
+    rgba(34, 139, 34, 0.5)
+  );
+}
+
+// Animaciones
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+// Estados hover personalizados
+.hover-lift:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s cubic-bezier(.4,2,.3,1);
+  box-shadow: 0 6px 24px 0 rgba(218,56,34,0.09), 0 1.5px 6px 0 rgba(47,106,76,0.12);
+  border-color: #EDC939;
+}
+
+// Tricolor borders y acentos
+.tricolor-border {
+  border-image: linear-gradient(90deg, #EDC939, #2F6A4C, #DA3822) 1;
+  border-width: 3px;
+  border-style: solid;
+}
+.tricolor-bottom {
+  border-bottom: 4px solid #EDC939;
+}
+.tricolor-accent {
+  border-left: 4px solid #DA3822;
+}
+.tricolor-earth {
+  border-right: 4px solid #8B4513;
+}
+
+// Tricolor backgrounds
+.bg-tricolor {
+  background: linear-gradient(135deg, #EDC939 0%, #2F6A4C 60%, #DA3822 100%);
+  color: #fff;
+}
+.bg-earth {
+  background: #8B4513;
+  color: #fff;
+}
+
+// Tricolor hover
+.tricolor-hover:hover {
+  background: linear-gradient(90deg, #EDC939 60%, #DA3822 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 12px 0 rgba(218,56,34,0.09);
+  border-color: #2F6A4C;
+}
+
+// Tricolor chips y badges
+.chip-tricolor {
+  background: linear-gradient(90deg, #EDC939 0%, #DA3822 100%);
+  color: #fff;
+}
+.chip-earth {
+  background: #8B4513;
+  color: #fff;
+}
+
+// Separadores y detalles
+.tricolor-separator {
+  border-top: 2px solid #EDC939;
+  border-bottom: 2px solid #DA3822;
+}
+.earth-separator {
+  border-top: 2px solid #8B4513;
+}
+
+// Utilidades para textos destacados
+.text-tricolor {
+  color: #EDC939;
+}
+.text-secondary {
+  color: #2F6A4C;
+}
+.text-accent {
+  color: #DA3822;
+}
+.text-earth {
+  color: #8B4513;
+}
+
+// Breakpoints responsivos
+@media (max-width: 600px) {
+  .container-custom {
+    padding: 0 8px;
+  }
+  
+  .mobile-text-center {
+    text-align: center;
+  }
+}
