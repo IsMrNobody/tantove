@@ -44,13 +44,7 @@
           >
             <v-card class="dish-card h-100 hover-lift" elevation="4">
               <div class="position-relative">
-                <NuxtImg
-                  :src="dish.image"
-                  :alt="dish.name"
-                  class="dish-image"
-                  width="400"
-                  height="250"
-                />
+                <img :src="dish.image" :alt="dish.name" class="dish-image" width="400" height="250" />
                 <v-chip
                   class="position-absolute top-0 right-0 ma-2"
                   :color="dish.regionColor"
@@ -177,13 +171,7 @@
             <v-card class="route-card hover-lift" elevation="4">
               <v-row no-gutters>
                 <v-col cols="5">
-                  <NuxtImg
-                    :src="route.image"
-                    :alt="route.name"
-                    class="route-image"
-                    width="300"
-                    height="200"
-                  />
+                  <img :src="route.image" :alt="route.name" class="route-image" width="300" height="200" />
                 </v-col>
                 <v-col cols="7">
                   <v-card-text class="pa-4 h-100 d-flex flex-column">
@@ -334,7 +322,7 @@ const typicalDishes = [
     prepTime: '30 min',
     serves: '4 porciones',
     difficulty: 'Fácil',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     mainIngredients: ['Harina de maíz', 'Agua', 'Sal'],
     fullDescription: 'La arepa es el pan tradicional de Venezuela, hecha con harina de maíz precocida. Se puede rellenar con una gran variedad de ingredientes.',
     ingredients: [
@@ -363,7 +351,7 @@ const typicalDishes = [
     prepTime: '2 horas',
     serves: '6 porciones',
     difficulty: 'Intermedio',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     mainIngredients: ['Carne mechada', 'Caraotas negras', 'Arroz', 'Plátano'],
     fullDescription: 'El Pabellón Criollo es considerado el plato nacional de Venezuela. Representa los colores de la bandera nacional.',
     ingredients: [
@@ -393,7 +381,7 @@ const typicalDishes = [
     prepTime: '4 horas',
     serves: '12 porciones',
     difficulty: 'Difícil',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     mainIngredients: ['Masa de maíz', 'Guiso', 'Hojas de plátano'],
     fullDescription: 'La hallaca es el plato tradicional de Navidad en Venezuela. Su preparación es todo un ritual familiar.',
     ingredients: [
@@ -474,7 +462,7 @@ const gastronomicRoutes = [
     id: 1,
     name: 'Ruta Caribeña',
     description: 'Descubre los sabores del mar en las costas venezolanas.',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     stops: 8,
     duration: '3 días'
   },
@@ -482,7 +470,7 @@ const gastronomicRoutes = [
     id: 2,
     name: 'Sabores Andinos',
     description: 'Explora la cocina de montaña en los Andes venezolanos.',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg',
     stops: 6,
     duration: '2 días'
   },
@@ -490,7 +478,7 @@ const gastronomicRoutes = [
     id: 3,
     name: 'Tradición Llanera',
     description: 'Vive la experiencia gastronómica de los llanos.',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg',
     stops: 5,
     duration: '2 días'
   },
@@ -498,7 +486,7 @@ const gastronomicRoutes = [
     id: 4,
     name: 'Cocina Caraqueña',
     description: 'La evolución culinaria en la capital venezolana.',
-    image: 'https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     stops: 10,
     duration: '1 día'
   }

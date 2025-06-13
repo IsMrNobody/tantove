@@ -485,7 +485,7 @@ const suggestedItineraries = [
     destinations: 4,
     budget: "$800-1200",
     difficulty: "Fácil",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg",
     highlights: ["Los Roques", "Isla Margarita", "Buceo", "Relajación"],
     fullDescription:
       "Un viaje perfecto para los amantes del mar y las playas paradisíacas. Descubre las aguas cristalinas de Los Roques y disfruta de la cultura caribeña en Isla Margarita.",
@@ -528,7 +528,7 @@ const suggestedItineraries = [
     destinations: 5,
     budget: "$600-900",
     difficulty: "Moderado",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg",
     highlights: ["Mérida", "Teleférico", "Páramos", "Senderismo"],
     fullDescription:
       "Una aventura completa por los Andes venezolanos, desde el teleférico más alto del mundo hasta caminatas por páramos únicos.",
@@ -564,7 +564,7 @@ const suggestedItineraries = [
     destinations: 6,
     budget: "$500-800",
     difficulty: "Fácil",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     highlights: ["Caracas", "Coro", "Valencia", "Museos"],
     fullDescription:
       "Un recorrido por los principales centros culturales e históricos de Venezuela, incluyendo sitios Patrimonio de la Humanidad.",

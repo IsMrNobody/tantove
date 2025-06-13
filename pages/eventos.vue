@@ -434,8 +434,7 @@ const events = [
     time: "10:00 AM - 10:00 PM",
     location: "El Callao, Bolívar",
     address: "Centro histórico de El Callao",
-    image:
-      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     activities: ["Comparsas", "Calipso", "Disfraces", "Concursos"],
     fullDescription:
       "El Carnaval de El Callao es una celebración única que combina la cultura afrocaribeña con las tradiciones venezolanas. Durante cuatro días, las calles se llenan de música, color y alegría.",
@@ -455,8 +454,7 @@ const events = [
     time: "7:00 PM - 11:00 PM",
     location: "Teatro Teresa Carreño, Caracas",
     address: "Av. Paseo Colón, Los Caobos",
-    image:
-      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     activities: ["Conciertos", "Masterclass", "Jam sessions", "Exposiciones"],
     fullDescription:
       "El Festival de Jazz de Caracas reúne a los mejores músicos nacionales e internacionales en una celebración del jazz en todas sus formas.",
@@ -475,8 +473,7 @@ const events = [
     time: "9:00 AM - 8:00 PM",
     location: "Centro de Arte La Estancia, Caracas",
     address: "Av. Francisco de Miranda, Altamira",
-    image:
-      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/1679825/pexels-photo-1679825.jpeg",
     activities: [
       "Presentaciones",
       "Talleres",
@@ -500,8 +497,7 @@ const events = [
     time: "6:00 PM - 12:00 AM",
     location: "Playa El Agua, Isla Margarita",
     address: "Sector El Agua, Antolín del Campo",
-    image:
-      "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/1679825/pexels-photo-1679825.jpeg",
     activities: ["Degustaciones", "Showcooking", "Concursos", "Música en vivo"],
     fullDescription:
       "Un festival que celebra la rica tradición culinaria de Venezuela con énfasis en los sabores del Caribe.",

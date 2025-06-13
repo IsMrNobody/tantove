@@ -4,7 +4,7 @@
     <section class="hero-section position-relative">
       <div class="hero-background">
         <NuxtImg
-          src="https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.pngphotos/417173/pexels-photo-417173.jpeg"
+          src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg"
           alt="Paisaje venezolano"
           class="hero-image"
           loading="eager"
@@ -86,7 +86,7 @@
               :style="`animation-delay: ${index * 0.2}s`"
             >
               <div class="position-relative">
-                <NuxtImg
+                <img
                   :src="feature.image"
                   :alt="feature.title"
                   class="card-image"
@@ -149,7 +149,7 @@
           >
             <v-card class="destination-card hover-lift" elevation="6">
               <div class="position-relative">
-                <NuxtImg
+                <img
                   :src="destination.image"
                   :alt="destination.name"
                   class="destination-image"
@@ -244,7 +244,7 @@
           <v-col cols="12" md="6">
             <div class="position-relative">
               <NuxtImg
-                src="https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.pngphotos/461382/pexels-photo-461382.jpeg"
+                src="https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg"
                 alt="Gastronomía venezolana"
                 class="rounded-lg w-100"
                 width="600"
@@ -398,7 +398,7 @@ const features = [
     description:
       "Desde el Salto Ángel hasta Los Roques, descubre paisajes que te quitarán el aliento.",
     icon: "mdi-mountain",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg",
     link: "/destinos",
   },
   {
@@ -406,7 +406,7 @@ const features = [
     description:
       "Saborea los platos tradicionales que han conquistado paladares por generaciones.",
     icon: "mdi-food",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg",
     link: "/gastronomia",
   },
   {
@@ -414,7 +414,7 @@ const features = [
     description:
       "Sumérgete en las tradiciones, música y arte que definen la identidad venezolana.",
     icon: "mdi-music",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     link: "/cultura",
   },
 ];
@@ -426,7 +426,7 @@ const popularDestinations = [
     region: "Caribe",
     rating: 5,
     reviews: "2,847",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     name: "Salto Ángel",
@@ -434,7 +434,7 @@ const popularDestinations = [
     region: "Canaima",
     rating: 5,
     reviews: "1,923",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg",
   },
   {
     name: "Mérida",
@@ -442,7 +442,7 @@ const popularDestinations = [
     region: "Andes",
     rating: 4.8,
     reviews: "3,156",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg",
   },
   {
     name: "Isla Margarita",
@@ -450,7 +450,7 @@ const popularDestinations = [
     region: "Nueva Esparta",
     rating: 4.7,
     reviews: "4,292",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg",
   },
 ];
 

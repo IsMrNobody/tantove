@@ -353,7 +353,7 @@ const teamMembers = [
     position: "Directora General",
     description:
       "Experta en turismo sostenible con más de 15 años de experiencia promoviendo destinos latinoamericanos.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
     social: [
       { platform: "LinkedIn", icon: "mdi-linkedin", color: "blue" },
       { platform: "Twitter", icon: "mdi-twitter", color: "light-blue" },
@@ -365,7 +365,7 @@ const teamMembers = [
     position: "Coordinador de Contenido",
     description:
       "Periodista y fotógrafo especializado en viajes, apasionado por capturar la esencia de cada destino.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
     social: [
       { platform: "Instagram", icon: "mdi-instagram", color: "pink" },
       { platform: "Facebook", icon: "mdi-facebook", color: "blue" },
@@ -377,7 +377,7 @@ const teamMembers = [
     position: "Especialista en Cultura",
     description:
       "Antropóloga cultural dedicada a preservar y difundir las tradiciones venezolanas.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
     social: [
       { platform: "LinkedIn", icon: "mdi-linkedin", color: "blue" },
       { platform: "Academia", icon: "mdi-school", color: "green" },
@@ -389,7 +389,7 @@ const teamMembers = [
     position: "Guía de Aventura",
     description:
       "Montañista y guía certificado con amplio conocimiento de los ecosistemas venezolanos.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
     social: [
       { platform: "Instagram", icon: "mdi-instagram", color: "pink" },
       { platform: "YouTube", icon: "mdi-youtube", color: "red" },

@@ -50,13 +50,7 @@
               elevation="4"
             >
               <div class="position-relative">
-                <NuxtImg
-                  :src="music.image"
-                  :alt="music.name"
-                  class="music-image"
-                  width="400"
-                  height="200"
-                />
+                <img :src="music.image" :alt="music.name" class="music-image" width="400" height="200" />
                 <div
                   class="music-overlay position-absolute bottom-0 left-0 w-100 pa-4"
                 >
@@ -135,13 +129,7 @@
             class="mb-8"
           >
             <v-card class="craft-card h-100" elevation="3">
-              <NuxtImg
-                :src="craft.image"
-                :alt="craft.name"
-                class="craft-image"
-                width="300"
-                height="200"
-              />
+              <img :src="craft.image" :alt="craft.name" class="craft-image" width="400" height="200" />
 
               <v-card-text class="pa-4">
                 <h4 class="text-h6 font-weight-bold cultura-primary mb-2">
@@ -390,7 +378,7 @@ const musicalGenres = [
     name: "Joropo",
     description: "Música y baile tradicional de los llanos venezolanos.",
     region: "Llanos",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     instruments: ["Arpa", "Cuatro", "Maracas"],
     fullDescription:
       "El joropo es el género musical más representativo de Venezuela, especialmente de la región llanera. Se caracteriza por su ritmo alegre y sus letras que exaltan la vida del llano.",
@@ -406,7 +394,7 @@ const musicalGenres = [
     name: "Gaita Zuliana",
     description: "Género musical navideño del estado Zulia.",
     region: "Zulia",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     instruments: ["Furro", "Tambora", "Charrasca", "Cuatro"],
     fullDescription:
       "La gaita zuliana es un género musical venezolano originario del estado Zulia, tradicionalmente interpretado en época navideña.",
@@ -422,7 +410,7 @@ const musicalGenres = [
     name: "Calipso",
     description: "Música caribeña con influencias de Trinidad y Tobago.",
     region: "Oriente",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     instruments: ["Steel drums", "Guitarra", "Bajo", "Percusión"],
     fullDescription:
       "El calipso venezolano tiene sus raíces en las islas caribeñas, especialmente influenciado por la música de Trinidad y Tobago.",
@@ -443,7 +431,7 @@ const crafts = [
     region: "Lara",
     material: "Arcilla",
     materialColor: "brown",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     id: 2,
@@ -452,7 +440,7 @@ const crafts = [
     region: "Falcón",
     material: "Palma",
     materialColor: "green",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     id: 3,
@@ -461,7 +449,7 @@ const crafts = [
     region: "Monagas",
     material: "Algodón",
     materialColor: "blue",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     id: 4,
@@ -470,7 +458,7 @@ const crafts = [
     region: "Bolívar",
     material: "Papel maché",
     materialColor: "purple",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     id: 5,
@@ -479,7 +467,7 @@ const crafts = [
     region: "Mérida",
     material: "Madera",
     materialColor: "brown",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
   {
     id: 6,
@@ -488,7 +476,7 @@ const crafts = [
     region: "Zulia",
     material: "Algodón",
     materialColor: "primary",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
   },
 ];
 
@@ -500,7 +488,7 @@ const festivals = [
     location: "El Callao, Bolívar",
     description:
       "Carnaval declarado Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     color: "cultura-primary",
     icon: "mdi-mask",
     activities: ["Comparsas", "Calipso", "Disfraces", "Bailes"],
@@ -512,7 +500,7 @@ const festivals = [
     location: "San Francisco de Yare, Miranda",
     description:
       "Tradición religiosa que combina elementos católicos y africanos.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     color: "cultura-secondary",
     icon: "mdi-drama-masks",
     activities: ["Danzas", "Máscaras", "Rituales", "Procesión"],
@@ -524,7 +512,7 @@ const festivals = [
     location: "San Cristóbal, Táchira",
     description:
       "Una de las ferias más importantes de Venezuela con actividades culturales y comerciales.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     color: "cultura-accent",
     icon: "mdi-festival",
     activities: ["Conciertos", "Exposiciones", "Corridas", "Gastronomía"],
@@ -535,7 +523,7 @@ const festivals = [
     date: "Junio",
     location: "Lara",
     description: "Manifestación cultural que honra a San Antonio de Padua.",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg",
     color: "cultura-secondary",
     icon: "mdi-music",
     activities: ["Danzas", "Música", "Cantos", "Rituales"],
@@ -549,7 +537,7 @@ const famousPeople = [
     profession: "Libertador",
     achievement: "Líder de la independencia de América Latina",
     period: "1783-1830",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
   },
   {
     id: 2,
@@ -557,7 +545,7 @@ const famousPeople = [
     profession: "Pianista",
     achievement: "Virtuosa del piano reconocida mundialmente",
     period: "1853-1917",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
   },
   {
     id: 3,
@@ -565,7 +553,7 @@ const famousPeople = [
     profession: "Escritor",
     achievement: 'Autor de "Doña Bárbara", presidente de Venezuela',
     period: "1884-1969",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
   },
   {
     id: 4,
@@ -573,7 +561,7 @@ const famousPeople = [
     profession: "Pintor",
     achievement: "Maestro del arte moderno venezolano",
     period: "1889-1954",
-    image: "https://res.cloudinary.com/dku13l2ep/image/upload/v1749826775/tantove/beautiful-woman-with-dress-yellow-blue-and-red-colors-sunset-natural-light-cinematic-lighting-pe_hd9cr2.png",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
   },
 ];
 
