@@ -422,7 +422,7 @@ const popularDestinations = [
     region: 'Andes',
     rating: 4.8,
     reviews: '3,156',
-    image: 'https://placehold.co/300x200/8B4513/FFFFFF?text=Merida'
+    image: 'https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg'
   },
   {
     name: 'Isla Margarita',

@@ -363,7 +363,7 @@ const typicalDishes = [
     prepTime: '2 horas',
     serves: '6 porciones',
     difficulty: 'Intermedio',
-    image: 'https://placehold.co/400x250/228B22/FFFFFF?text=Pabellon+Criollo',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     mainIngredients: ['Carne mechada', 'Caraotas negras', 'Arroz', 'Plátano'],
     fullDescription: 'El Pabellón Criollo es considerado el plato nacional de Venezuela. Representa los colores de la bandera nacional.',
     ingredients: [
@@ -474,7 +474,7 @@ const gastronomicRoutes = [
     id: 1,
     name: 'Ruta Caribeña',
     description: 'Descubre los sabores del mar en las costas venezolanas.',
-    image: 'https://placehold.co/300x200/0077BE/FFFFFF?text=Ruta+Caribena',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     stops: 8,
     duration: '3 días'
   },
@@ -482,7 +482,7 @@ const gastronomicRoutes = [
     id: 2,
     name: 'Sabores Andinos',
     description: 'Explora la cocina de montaña en los Andes venezolanos.',
-    image: 'https://placehold.co/300x200/8B4513/FFFFFF?text=Sabores+Andinos',
+    image: 'https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg',
     stops: 6,
     duration: '2 días'
   },
@@ -490,7 +490,7 @@ const gastronomicRoutes = [
     id: 3,
     name: 'Tradición Llanera',
     description: 'Vive la experiencia gastronómica de los llanos.',
-    image: 'https://placehold.co/300x200/228B22/FFFFFF?text=Tradicion+Llanera',
+    image: 'https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg',
     stops: 5,
     duration: '2 días'
   },
@@ -498,7 +498,7 @@ const gastronomicRoutes = [
     id: 4,
     name: 'Cocina Caraqueña',
     description: 'La evolución culinaria en la capital venezolana.',
-    image: 'https://placehold.co/300x200/9C27B0/FFFFFF?text=Cocina+Caraquena',
+    image: 'https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg',
     stops: 10,
     duration: '1 día'
   }

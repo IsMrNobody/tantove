@@ -432,7 +432,7 @@ const events = [
     time: '9:00 AM - 8:00 PM',
     location: 'Centro de Arte La Estancia, Caracas',
     address: 'Av. Francisco de Miranda, Altamira',
-    image: 'https://placehold.co/400x200/228B22/FFFFFF?text=Feria+Libro',
+    image: 'https://images.pexels.com/photos/1679825/pexels-photo-1679825.jpeg',
     activities: ['Presentaciones', 'Talleres', 'Conferencias', 'Firma de libros'],
     fullDescription: 'La Feria Internacional del Libro de Venezuela es el evento editorial más importante del país, donde se reúnen escritores, editores y lectores.',
     price: 'Gratuito',

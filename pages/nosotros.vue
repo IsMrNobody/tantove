@@ -365,7 +365,7 @@ const teamMembers = [
     position: "Coordinador de Contenido",
     description:
       "Periodista y fotógrafo especializado en viajes, apasionado por capturar la esencia de cada destino.",
-    image: "https://placehold.co/120x120/228B22/FFFFFF?text=CR",
+    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
     social: [
       { platform: "Instagram", icon: "mdi-instagram", color: "pink" },
       { platform: "Facebook", icon: "mdi-facebook", color: "blue" },
